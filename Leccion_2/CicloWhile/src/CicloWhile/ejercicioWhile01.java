@@ -1,5 +1,7 @@
 package CicloWhile;
 
+import java.util.Scanner;
+
 public class ejercicioWhile01 {
 
     public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class ejercicioWhile01 {
             System.out.println("contando = " + contando);//va a printear los pares
         }
         //Etiquetas, Labels,
-        //Uso de las palabras break y continue junto a las etiquetas(labels)
+        //Uso de las palabras break y continue junto a las etiquetas(labels) siempre se inicia la etiqueta arriba de la iteracion
         //inicio:
         for (var contando = 0; contando < 7; contando++) {
             if (contando % 2 == 0) {
@@ -50,4 +52,4 @@ public class ejercicioWhile01 {
             System.out.println("contando = " + contando);//va a printear los pares
         }
     }
-}
+    }       
