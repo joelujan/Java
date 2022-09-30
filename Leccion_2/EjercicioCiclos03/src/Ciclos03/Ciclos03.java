@@ -2,17 +2,15 @@
 Ejercicio 3: Leer numeros hasta q se introduzca un cero. Para cada uno indicar
 si es par o impar. Primero lo haremos con la clase Scanner. Luego con la clase 
 JOptionPane
-
  */
-package leccionclaseobjetos;
+package Ciclos03;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class LeccionClaseObjetos {
-
+public class Ciclos03 {
     public static void main(String[] args) {
-        //Do While con Scanner
+                   //Do While con Scanner
     /*    Scanner leer = new Scanner(System.in);
         int num;
         do {
@@ -36,6 +34,7 @@ public class LeccionClaseObjetos {
         }
         num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
     }
-    }
+    } 
+    
 
 }
