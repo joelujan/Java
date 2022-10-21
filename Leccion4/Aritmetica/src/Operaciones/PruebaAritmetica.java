@@ -26,6 +26,11 @@ public class PruebaAritmetica {
         System.out.println("aritmetica2 = " + aritmetica2.b);
       //aritmetica1 = null; Esto no es necesario, no es necesario limpiar, xq se hace con el garbage collector de java
       //System.gc();//Metodo para limpiar residuos, es pesado, no utilizar
+      Persona persona = new Persona("Ariel", "Betancud");
+        System.out.println("persona = " + persona);
+        System.out.println("Persona nombre: "+persona.nombre);
+        System.out.println("Persona nombre: "+persona.apellido);
+      
     }
     
     //Modularidad
@@ -33,5 +38,25 @@ public class PruebaAritmetica {
         //a= 10; una varialbe esta limitada
         System.out.println("Aqui hay otro metodo");
         
+    }
+}
+class Persona{
+    String nombre;
+    String apellido;
+    
+    Persona(String nombre, String apellido){
+        super();//LLamada al constructor de la clase Padre Object
+        this.nombre = nombre;
+        this.apellido = apellido;
+        System.out.println("Objeto persona usando this"+this);
+    }
+}
+class Imprimir{
+    public Imprimir(){
+        super();//El constructor de la clase padre para reservar memoria
+    }
+    public void imprimir(Persona persona){
+        System.out.println("Persona desde la clase imprimir "+persona);
+        System.out.println("Impresión del objeto actual (this): "+this);
     }
 }
