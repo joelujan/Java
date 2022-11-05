@@ -11,9 +11,17 @@ public class Empleado extends Persona{
     private static int contadorEmpleados;//El static es para q este asociado a la clase, una especie de contador
     
     //Constructor
+
+    public Empleado() {
+        this.idEmpleado = ++Empleado.contadorEmpleados;
+    }
+    
+    
     public Empleado(String nombre, double sueldo) {
-        super(nombre);//Asi seteo el nombre solo de su clase padre
-        this.idEmpleado = ++Empleado.contadorEmpleados;//Dentro del contexto estático asi debo llamar
+        //super(nombre);//Asi seteo el nombre solo de su clase padre
+        //this.idEmpleado = ++Empleado.contadorEmpleados;//Dentro del contexto estático asi debo llamar
+        this(); //Estamos llamando desde aqui al constructor vacio (llamar a un constructor interno)NO PODEMOS LLAMAR AL SUPER Y AL INTERNO, tenemos q elegir uno
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
